@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Newsletter sign-up form with success message</title>
+  </head>
+  <body>
+    <main>
+      <div class="sign-up">
+        <div class="sign-up__txt">
+          <h1>Stay updated!</h1>
+          <p>
+            Join 60,000+ product managers receiving monthly <br />
+            updates on:
+          </p>
+          <div class="updates">
+            <div class="update">
+              <img src="/assets/images/icon-list.svg" alt="icon-list" />
+              <span> Product discovery and building what matters </span>
+            </div>
+            <div class="update">
+              <img src="/assets/images/icon-list.svg" alt="icon-list" />
+              <span> Measuring to ensure updates are a success </span>
+            </div>
+            <div class="update">
+              <img src="/assets/images/icon-list.svg" alt="icon-list" />
+              <span> And much more! </span>
+            </div>
+          </div>
+
+          <form action="#" id="myForm" action="#" onsubmit="validateForm(); return false;">
+            <label for="e-mail">Email address</label> <span class="error-msg">Valid email required</span> <br />
+            <input type="text" name="e-mail" id="e-mail" placeholder="email@company.com" />
+            <br />
+
+            <a href="/succes.html">
+              <button onclick="validateForm()" class="submitbtn" type="submit">Subscribe to monthly newsletter</button>
+            </a>
+
+          </form>
+        </div>
+
+        <img
+          src="/assets/images/illustration-sign-up-desktop.svg"
+          width="400"
+          height="593"
+          alt="illustration-sign-up-desktop"
+        />
+      </div>
+    </main>
+
+  </body>
+  <script src="/script.js"></script>
+</html>
